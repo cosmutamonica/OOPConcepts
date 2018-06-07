@@ -1,0 +1,267 @@
+E:\DelicePanProject\Suporteri\Suporteri\bin\ApplicationInsights.config
+E:\DelicePanProject\Suporteri\Suporteri\bin\roslyn\csc.exe
+E:\DelicePanProject\Suporteri\Suporteri\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\DelicePanProject\Suporteri\Suporteri\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\DelicePanProject\Suporteri\Suporteri\bin\roslyn\System.Collections.Immutable.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\roslyn\System.Reflection.Metadata.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\roslyn\vbc.exe
+E:\DelicePanProject\Suporteri\Suporteri\bin\roslyn\VBCSCompiler.exe
+E:\DelicePanProject\Suporteri\Suporteri\bin\roslyn\VBCSCompiler.exe.config
+E:\DelicePanProject\Suporteri\Suporteri\bin\Suporteri.dll.config
+E:\DelicePanProject\Suporteri\Suporteri\bin\Suporteri.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Suporteri.pdb
+E:\DelicePanProject\Suporteri\Suporteri\bin\Antlr3.Runtime.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\EntityFramework.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\EntityFramework.SqlServer.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.AI.Agent.Intercept.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.AI.DependencyCollector.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.AI.Web.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.AI.WindowsServer.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.ApplicationInsights.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.AspNet.Identity.Core.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Owin.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Owin.Security.Cookies.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Owin.Security.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Owin.Security.Facebook.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Owin.Security.Google.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Owin.Security.OAuth.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Owin.Security.Twitter.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Web.Infrastructure.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\MySql.Data.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\MySql.Data.Entity.EF6.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\MySql.Web.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Newtonsoft.Json.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Owin.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\SendGrid.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\System.Web.Helpers.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\System.Web.Mvc.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\System.Web.Optimization.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\System.Web.Razor.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\System.Web.WebPages.Deployment.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\System.Web.WebPages.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\System.Web.WebPages.Razor.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\WebGrease.dll
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.AI.DependencyCollector.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.AI.Web.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.AI.WindowsServer.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.ApplicationInsights.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Newtonsoft.Json.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\SendGrid.pdb
+E:\DelicePanProject\Suporteri\Suporteri\bin\SendGrid.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\System.Web.Helpers.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\System.Web.Mvc.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\System.Web.Optimization.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\System.Web.Razor.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\System.Web.WebPages.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\System.Web.WebPages.Deployment.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\System.Web.WebPages.Razor.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Antlr3.Runtime.pdb
+E:\DelicePanProject\Suporteri\Suporteri\bin\EntityFramework.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\EntityFramework.SqlServer.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.AspNet.Identity.Core.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Owin.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Owin.Security.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Owin.Security.Facebook.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Owin.Security.Cookies.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Owin.Security.OAuth.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Owin.Security.Google.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Owin.Security.Twitter.xml
+E:\DelicePanProject\Suporteri\Suporteri\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\DelicePanProject\Suporteri\Suporteri\obj\Debug\Suporteri.dll
+E:\DelicePanProject\Suporteri\Suporteri\obj\Debug\Suporteri.pdb
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\ApplicationInsights.config
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\roslyn\csc.exe
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\roslyn\System.Collections.Immutable.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\roslyn\System.Reflection.Metadata.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\roslyn\vbc.exe
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\roslyn\VBCSCompiler.exe
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\roslyn\VBCSCompiler.exe.config
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Suporteri.dll.config
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Suporteri.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Suporteri.pdb
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Antlr3.Runtime.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\EntityFramework.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\EntityFramework.SqlServer.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.AI.Agent.Intercept.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.AI.DependencyCollector.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.AI.Web.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.AI.WindowsServer.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.ApplicationInsights.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.AspNet.Identity.Core.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Owin.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.Cookies.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.Facebook.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.Google.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.OAuth.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.Twitter.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Web.Infrastructure.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\MySql.Data.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\MySql.Data.Entity.EF6.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\MySql.Web.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Newtonsoft.Json.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Owin.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\SendGrid.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\System.Web.Helpers.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\System.Web.Mvc.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\System.Web.Optimization.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\System.Web.Razor.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\System.Web.WebPages.Deployment.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\System.Web.WebPages.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\System.Web.WebPages.Razor.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\WebGrease.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.AI.DependencyCollector.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.AI.Web.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.AI.WindowsServer.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.ApplicationInsights.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Newtonsoft.Json.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\SendGrid.pdb
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\SendGrid.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\System.Web.Helpers.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\System.Web.Mvc.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\System.Web.Optimization.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\System.Web.Razor.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\System.Web.WebPages.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\System.Web.WebPages.Deployment.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\System.Web.WebPages.Razor.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Antlr3.Runtime.pdb
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\EntityFramework.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\EntityFramework.SqlServer.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.AspNet.Identity.Core.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Owin.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.Facebook.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.Cookies.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.OAuth.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.Google.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.Twitter.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\DelicePanProject\DelicePanApplication\Suporteri\obj\Debug\Suporteri.Properties.Resources.resources
+E:\DelicePanProject\DelicePanApplication\Suporteri\obj\Debug\DelicePanApplication.csproj.GenerateResource.Cache
+E:\DelicePanProject\DelicePanApplication\Suporteri\obj\Debug\Suporteri.dll
+E:\DelicePanProject\DelicePanApplication\Suporteri\obj\Debug\Suporteri.pdb
+E:\DelicePanProject\DelicePanApplication\Suporteri\obj\Debug\DelicePanApplication.csprojResolveAssemblyReference.cache
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\ApplicationInsights.config
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\roslyn\csc.exe
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\roslyn\System.Collections.Immutable.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\roslyn\System.Reflection.Metadata.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\roslyn\vbc.exe
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\roslyn\VBCSCompiler.exe
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\roslyn\VBCSCompiler.exe.config
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Suporteri.dll.config
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Suporteri.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Suporteri.pdb
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Antlr3.Runtime.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\EntityFramework.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\EntityFramework.SqlServer.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.AI.DependencyCollector.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.AI.Web.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.AI.WindowsServer.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.ApplicationInsights.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Owin.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.Google.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Web.Infrastructure.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\MySql.Data.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\MySql.Data.Entity.EF6.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\MySql.Web.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Newtonsoft.Json.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Owin.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\SendGrid.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\System.Web.Helpers.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\System.Web.Mvc.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\System.Web.Optimization.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\System.Web.Razor.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\System.Web.WebPages.Deployment.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\System.Web.WebPages.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\System.Web.WebPages.Razor.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\WebGrease.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.AI.DependencyCollector.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.AI.Web.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.AI.WindowsServer.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.ApplicationInsights.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Newtonsoft.Json.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\SendGrid.pdb
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\SendGrid.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\System.Web.Helpers.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\System.Web.Mvc.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\System.Web.Optimization.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\System.Web.Razor.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\System.Web.WebPages.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\System.Web.WebPages.Deployment.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\System.Web.WebPages.Razor.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Antlr3.Runtime.pdb
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\EntityFramework.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\EntityFramework.SqlServer.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Owin.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.Google.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Licenta backup\DelicePanApplication\Suporteri\obj\Debug\DelicePanApplication.csprojResolveAssemblyReference.cache
+E:\Licenta backup\DelicePanApplication\Suporteri\obj\Debug\Suporteri.Properties.Resources.resources
+E:\Licenta backup\DelicePanApplication\Suporteri\obj\Debug\DelicePanApplication.csproj.GenerateResource.Cache
+E:\Licenta backup\DelicePanApplication\Suporteri\obj\Debug\Suporteri.dll
+E:\Licenta backup\DelicePanApplication\Suporteri\obj\Debug\Suporteri.pdb

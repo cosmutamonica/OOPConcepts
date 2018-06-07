@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Suporteri.Models.User>
+@{
+    ViewBag.Title = "Contact";
+}
+<link href="~/Style/style.css" rel="stylesheet" />
+<script src="~/Scripts/googleMap.js"></script>
+<br /><br />
+<h1 class="largeText" style="text-align:center">Brutaria Delice Pan</h1><br />
+<h2 style="text-align:center">Contactati-ne!</h2>
+<br />
+<p>
+    <b> Tiha Bârgăului</b> Numărul 295, Județul Bistrița-Năsăud<br /><br />
+    Telefon: 0747-348.630, 0747-240.371, 0740-158.884
+</p>
+
+<div id="map" style="width:80%;height:500px; margin-left:10%" onclick=""></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7385E3sjwvf87AzDJGakWKk8iRI1SX1Y&callback=myMap"></script>
+<script type="text/javascript">
+    window.onload = googleMap();
+    function googleMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 8,
+            center: new google.maps.LatLng(47.22973968433303, 24.775307178497314),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+        var infowindow = new google.maps.InfoWindow();
+        var marker, i;
+
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(47.22973968433303, 24.775307178497314),
+            map: map
+        });
+
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+                infowindow.setContent("Delice Pan");
+                infowindow.open(map, marker);
+            }
+        })(marker, i));
+
+    }
+</script>
+@*<script type="text/javascript">
+        window.onload = googleMap();
+        document.getElementById("map").addEventListener("click", function (event) {
+            event.preventDefault()
+            event.returnValue = false;
+            return false;
+        });
+        function googleMap() {
+            preventDefault();
+            var myCenter = new google.maps.LatLng(47.22973968433303, 24.775307178497314);
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = { center: myCenter, zoom: 8 };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({ position: myCenter });
+            marker.setMap(map);
+
+            var infowindow = new google.maps.InfoWindow();
+            infowindow.open(map, marker);
+
+        }
+    </script>*@

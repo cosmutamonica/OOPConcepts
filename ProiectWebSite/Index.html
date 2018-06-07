@@ -1,0 +1,32 @@
+<!DOCTYPE  html>
+<html>
+<head>
+<title>PROIECT WEB-Mancaruri</title>
+<link rel="stylesheet" type="text/css" href="new 6.css">
+</head>
+<body>
+<script>
+ function showImages() {
+    var image = document.getElementById('image');
+	if (image != null){
+		image.src = "mancare2.jpg";			
+	}
+}  
+</script>
+<center>
+<h1>Mancaruri</h1>
+<img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVgi0VmapV6HccH46cpQ_9f4iKkwgMKkqjMUgwV2ISYO_9wMqnQw" alt="Mancare" width="430" height="320" style="margin-top: 10px" border="3;" onclick="showImages()">
+
+</center>
+ <div class="meniu" id="meniul meu">
+ <a href="Preparate din carne.html" class="active">Preparate din carne</a>
+  <a href="Antreuri.html">Antreuri</a>
+  <a href="Salate si preparate vegetariene.html">Salate si preparate vegetariene</a>
+  <a href="Deserturi.html">Deserturi</a>
+  <a href="Marii chefi culinari ai lumii.html">Marii chefi culinari ai lumii</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</body>
+</html>

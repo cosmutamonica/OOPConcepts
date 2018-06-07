@@ -1,0 +1,176 @@
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\ApplicationInsights.config
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\roslyn\csc.exe
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\roslyn\vbc.exe
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\roslyn\VBCSCompiler.exe
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Suporteri.dll.config
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Suporteri.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Suporteri.pdb
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Antlr3.Runtime.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\EntityFramework.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\EntityFramework.SqlServer.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.AI.Web.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.ApplicationInsights.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Owin.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Owin.Security.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\MySql.Data.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\MySql.Data.Entity.EF6.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\MySql.Web.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Newtonsoft.Json.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Owin.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\SendGrid.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\System.Web.Helpers.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\System.Web.Mvc.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\System.Web.Optimization.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\System.Web.Razor.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\System.Web.WebPages.Deployment.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\System.Web.WebPages.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\System.Web.WebPages.Razor.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\WebGrease.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.AI.Web.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.ApplicationInsights.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Newtonsoft.Json.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\SendGrid.pdb
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\SendGrid.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\System.Web.Helpers.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\System.Web.Mvc.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\System.Web.Optimization.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\System.Web.Razor.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\System.Web.WebPages.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\System.Web.WebPages.Deployment.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\System.Web.WebPages.Razor.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Antlr3.Runtime.pdb
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\EntityFramework.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\EntityFramework.SqlServer.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Owin.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Owin.Security.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\obj\Debug\Suporteri.dll
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\obj\Debug\Suporteri.pdb
+C:\Users\TEst\documents\visual studio 2015\Projects\Suporteri\Suporteri\obj\Debug\Suporteri.csprojResolveAssemblyReference.cache
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\ApplicationInsights.config
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\roslyn\csc.exe
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\roslyn\System.Collections.Immutable.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\roslyn\System.Reflection.Metadata.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\roslyn\vbc.exe
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\roslyn\VBCSCompiler.exe
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\roslyn\VBCSCompiler.exe.config
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Suporteri.dll.config
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Suporteri.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Suporteri.pdb
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Antlr3.Runtime.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\EntityFramework.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\EntityFramework.SqlServer.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.AI.Agent.Intercept.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.AI.DependencyCollector.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.AI.Web.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.AI.WindowsServer.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.ApplicationInsights.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.AspNet.Identity.Core.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Owin.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Owin.Security.Cookies.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Owin.Security.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Owin.Security.Facebook.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Owin.Security.Google.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Owin.Security.OAuth.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Owin.Security.Twitter.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Web.Infrastructure.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\MySql.Data.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\MySql.Data.Entity.EF6.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\MySql.Web.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Newtonsoft.Json.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Owin.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\SendGrid.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\System.Web.Helpers.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\System.Web.Mvc.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\System.Web.Optimization.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\System.Web.Razor.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\System.Web.WebPages.Deployment.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\System.Web.WebPages.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\System.Web.WebPages.Razor.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\WebGrease.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.AI.DependencyCollector.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.AI.Web.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.AI.WindowsServer.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.ApplicationInsights.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Newtonsoft.Json.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\SendGrid.pdb
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\SendGrid.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\System.Web.Helpers.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\System.Web.Mvc.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\System.Web.Optimization.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\System.Web.Razor.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\System.Web.WebPages.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\System.Web.WebPages.Deployment.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\System.Web.WebPages.Razor.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Antlr3.Runtime.pdb
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\EntityFramework.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\EntityFramework.SqlServer.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.AspNet.Identity.Core.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Owin.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Owin.Security.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Owin.Security.Facebook.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Owin.Security.Cookies.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Owin.Security.OAuth.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Owin.Security.Google.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Owin.Security.Twitter.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\DelicePanProject\DelicePanApp\Suporteri\obj\Debug\Suporteri.csprojResolveAssemblyReference.cache
+E:\DelicePanProject\DelicePanApp\Suporteri\obj\Debug\Suporteri.dll
+E:\DelicePanProject\DelicePanApp\Suporteri\obj\Debug\Suporteri.pdb

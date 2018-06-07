@@ -1,0 +1,39 @@
+﻿@model Suporteri.Models.Order
+<link href="~/Style/style.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Sterge comanda</h2>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <div class="panel panel-default marginPanel text-center" style="width:400px">
+        <div class="panel-heading">@Html.DisplayFor(model => model.ProductName)</div>
+        <div class="panel-body">
+
+            <div class="form-group">
+                Cantitate: @Html.DisplayFor(model => model.Quantity)
+            </div>
+
+            <div class="form-group">
+                Pret: @Html.DisplayFor(model => model.UnitPrice) RON /  @Html.DisplayFor(model => model.Category)
+            </div>
+
+            <div class="form-group">
+                Pret Total: @Html.DisplayFor(model => model.TotalPrice) RON
+            </div>
+        </div>
+    </div>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

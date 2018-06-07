@@ -1,0 +1,114 @@
+﻿@model Suporteri.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Inregistrare";
+}
+<br /><br />
+<h2>@ViewBag.Title</h2><br />
+<script src="~/Scripts/googleMap.js"></script>
+<link href="~/Style/style.css" rel="stylesheet" />
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4><p>Fii unul dintre clientii nostri!</p></h4>
+    <hr />
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <div class="group">
+        <div class="left">
+            <div class="form-group paragraph">
+                @Html.LabelFor(m => m.FirstName, new { @class = "col-md-4 control-label" })
+                <div class="col-md-8">
+                    @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group paragraph">
+                @Html.LabelFor(m => m.LastName, new { @class = "col-md-4 control-label" })
+                <div class="col-md-8">
+                    @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group paragraph">
+                @Html.LabelFor(m => m.PhoneNumber, new { @class = "col-md-4 control-label" })
+                <div class="col-md-8">
+                    @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group paragraph">
+                @Html.LabelFor(m => m.Address, new { @class = "col-md-4 control-label" })
+                <div class="col-md-8">
+                    @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group paragraph">
+                @{
+                    List<SelectListItem> clientTypes = new List<SelectListItem>();
+                    clientTypes.Add(new SelectListItem
+                    {
+                        Text = "Persoana fizica",
+                        Value = "Persoana fizica"
+                    });
+                    clientTypes.Add(new SelectListItem
+                    {
+                        Text = "Persoana juridica",
+                        Value = "Persoana juridica",
+                        Selected = true
+                    });
+                }
+                @Html.LabelFor(m => m.Type, new { @class = "col-md-4 control-label paragraph" })
+                <div class="col-md-8">
+                    @Html.DropDownListFor(model => model.Type, clientTypes, "-- Selecteaza --", new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Email, new { @class = "col-md-4 control-label paragraph" })
+                <div class="col-md-8">
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Password, new { @class = "col-md-4 control-label paragraph" })
+                <div class="col-md-8">
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-4 control-label paragraph" })
+                <div class="col-md-8">
+                    @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                </div>
+            </div>
+        </div>
+        <div class="right">   
+            <p> Alege Locatia </p>            
+            <div id="map" style="width:100%;height:300px;margin:auto"></div>
+            <input onclick="deleteMarkers();" type=button value="Delete Markers">
+            <span style="color:red"><b>@ViewBag.Error</b></span>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" id="submit" class="btn btn-default" value="Register" onclick="return msg(e);" />
+            </div>
+        </div>
+    </div>
+
+        <input type="hidden" id="lat" name="lat" />
+        <input type="hidden" id="lng" name="lng" />
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7385E3sjwvf87AzDJGakWKk8iRI1SX1Y&callback=myMap"></script>
+    <script>
+        //document.getElementById("submit").onsubmit = function () {
+        //    alert("Hello world!");
+        //};
+        //$('#submit').click(function (e) {
+        //    //e.preventDefault();
+        //})
+        function msg(e) {
+            // do something
+            if (document.getElementById("lat").value == '' || document.getElementById("lng").value == '') {
+                return false;
+            }
+        }
+    </script>
+}

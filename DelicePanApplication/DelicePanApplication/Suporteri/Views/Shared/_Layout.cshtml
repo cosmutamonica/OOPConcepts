@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Style/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+
+            <div class="navbar-header" >
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Delice Pan", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li></li>
+                    <li>@Html.ActionLink("Produse", "AllProducts", "Product")</li>
+
+                    @{
+                        if (this.User.Identity.IsAuthenticated)
+                        {
+                            if (this.User.IsInRole("Admin"))
+                            {
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Comenzi<b class="caret"></b></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li>@Html.ActionLink("Comenzi de livrat", "GetNextOrders", "Order")</li>
+                                        <li>@Html.ActionLink("Comenzile din ultima saptamana", "GetLastWeekOrders", "Order")</li> 
+                                        <li>@Html.ActionLink("Toate comenzile", "GetAllOrders", "Order")</li>                                       
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productie<b class="caret"></b></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li>@Html.ActionLink("Adauga", "AddProduction", "Production")</li>
+                                        <li>@Html.ActionLink("Productia de azi", "DailyProduction", "Production")</li>
+                                        <li>@Html.ActionLink("Saptamana asta", "WeeklyProduction", "Production")</li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rapoarte<b class="caret"></b></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li>@Html.ActionLink("Top Produse", "TopProduct", "Report")</li>
+                                        <li>@Html.ActionLink("Evolutia productiei", "ProductionEvolution", "Report")</li>
+                                    </ul>
+                                </li>
+
+                            }
+                            else if (this.User.IsInRole("Client"))
+                            {
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Comenzi<b class="caret"></b></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li>@Html.ActionLink("Comanda noua", "Create", "Order")</li>
+                                        @if (Session["Orders"] != null)
+                                        {
+                                            <li>@Html.ActionLink("Confirma comanda", "GetPendingOrders", "Order")</li>
+                                        }
+                                        <li>@Html.ActionLink("Comenzi trimise", "GetClientOrders", "Order")</li>
+                                        <li>@Html.ActionLink("Comenzi anterioare", "GetPreviousOrders", "Order")</li>
+                                    </ul>
+                                </li>
+                            }
+                        }
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    }
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    <div class="container body-content">
+        @RenderBody()
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <footer class="footer">
+            <p>&copy; Monica Roxana Cosmuta - @DateTime.Now.Year</p>
+        </footer>
+    </div>
+
+    @*@Scripts.Render("~/bundles/jquery")*@
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿@model Suporteri.Models.Product
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    
+    <h3>Esti sigur ca vrei sa stergi inregstrarea?</h3>
+    
+    <table class="table table-striped" id="table">
+        <tr>
+            <th rowspan="2" width="300px">
+                <img src=@Html.DisplayFor(model=> model.ImagePath) />
+            </th>
+            <th style="text-align: center;">
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th style="text-align: center;">
+                @Html.DisplayNameFor(model => model.UnitPrice)
+            </th>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                @Html.DisplayFor(model => model.ProductName)
+            </td>
+            <td style="text-align: center;">
+                @Html.DisplayFor(model => model.UnitPrice) RON /  @Html.DisplayFor(model => model.Category)
+            </td>
+        </tr>
+    </table>
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color right">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Produse", "AllProducts")
+        </div>
+    }
+</div>

@@ -1,0 +1,124 @@
+﻿body {
+}
+
+.left {
+    float: left;
+    width: 50%;
+}
+
+.right {
+    float: right;
+    width: 50%;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.marginPanel {
+    margin: 4px;
+}
+
+.footer {
+    position: relative;
+    margin-top: -150px; /* negative value of footer height */
+    height: 150px;
+    clear: both;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .left,
+    .right {
+        float: none;
+        width: auto;
+    }
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.largeText {
+    font-family: times, Times New Roman, times-roman, georgia, serif;
+    font-size: 48px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: #444;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-weight: 100;
+}
+
+.pHeader {
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+    font-style: italic;
+    color: #424242;
+}
+body{
+    background: #F0EFE7;
+}
+a {
+    font-style: normal;
+    font-variant: small-caps;
+    text-decoration: none;
+    color: #afafaf;
+    font-size: 14px;
+}
+
+p:first-letter {
+    text-transform: uppercase;
+}
+
+p {
+    color: #424242;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+    letter-spacing: 0.1em;
+    text-align: center;    
+    text-transform: lowercase;    
+    font-size: 14pt;
+    font-variant: small-caps;
+}
+
+.paragraph {
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;  
+    letter-spacing: 0.1em;
+    font-size: 12pt;
+    color:black;
+}
+.footerText {
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;  
+    letter-spacing: 0.1em;
+    font-size: 10pt;
+}
+.textStyle {
+    font-family: 'Hoefler Text', Georgia, 'Times New Roman', serif;
+    font-weight: normal;
+    font-size: 1.75em;
+    letter-spacing: .2em;
+    line-height: 1.1em;
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2{
+    font-family: 'Hoefler Text', Georgia, 'Times New Roman', serif;
+    font-weight: normal;
+    font-size: 1.75em;
+    letter-spacing: .2em;
+    line-height: 1.1em;
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 480px) {
+    .textBoxuantity {
+       margin-left:10%;
+       position:center;
+    }
+}
+.floatLeft{
+    float:left;
+}

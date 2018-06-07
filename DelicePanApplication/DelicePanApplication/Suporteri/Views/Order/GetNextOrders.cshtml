@@ -1,0 +1,143 @@
+﻿@model IEnumerable<Suporteri.Models.Order>
+
+<link href="~/Style/style.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "GetNextOrders";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br /><br />
+<h2>Comenzi</h2>
+<br />
+@*<button class="btn btn-default">
+        @Html.ActionLink("Vezi toate comenzile", "GetAllOrders", "Order")
+    </button>*@
+
+<div class="panel panel-default marginPanel text-center">
+    @if (Model.Count() > 0)
+    {
+        string user = Model.First().UserEmail;
+        <table class="table table-striped">
+            <tr>
+                <th class="textAlignCenter">
+                    @Html.ActionLink(Html.DisplayNameFor(model => model.ProductName).ToString(), "GetNextOrders", new { orderBy = Html.DisplayNameFor(model => model.ProductName).ToString(), order = ViewBag.Order })
+                </th>
+                <th class="textAlignCenter">
+                    @Html.ActionLink(Html.DisplayNameFor(model => model.Quantity).ToString(), "GetNextOrders", new { orderBy = Html.DisplayNameFor(model => model.Quantity).ToString(), order = ViewBag.Order })
+                </th>
+                <th class="textAlignCenter">
+                    @Html.ActionLink(Html.DisplayNameFor(model => model.OrderDate).ToString(), "GetNextOrders", new { orderBy = Html.DisplayNameFor(model => model.OrderDate).ToString(), order = ViewBag.Order })
+                </th>
+                <th class="textAlignCenter">
+                    @Html.ActionLink(Html.DisplayNameFor(model => model.DeliveryDate).ToString(), "GetNextOrders", new { orderBy = Html.DisplayNameFor(model => model.DeliveryDate).ToString(), order = ViewBag.Order })
+                </th>
+                <th class="textAlignCenter">
+                    @Html.ActionLink(Html.DisplayNameFor(model => model.DeliveryMethod).ToString(), "GetNextOrders", new { orderBy = Html.DisplayNameFor(model => model.DeliveryMethod).ToString(), order = ViewBag.Order })
+                </th>
+                <th class="textAlignCenter">
+                    @Html.ActionLink(Html.DisplayNameFor(model => model.UserEmail).ToString(), "GetNextOrders", new { orderBy = Html.DisplayNameFor(model => model.UserEmail).ToString(), order = ViewBag.Order })
+                </th>
+                @*<th></th>*@
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                if (user != item.UserEmail && Html.DisplayNameFor(model => model.ProductName).ToString() == "Produs")
+                {
+                    <tr style="height:2px">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                }
+
+                if (item.DeliveryDate < DateTime.Now)
+                {
+                    <tr style="background-color:bisque">
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProductName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Quantity)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OrderDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DeliveryDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DeliveryMethod)
+                        </td>
+                        <td>
+                            @Html.ActionLink(Html.ValueFor(modelItem => item.UserEmail).ToString(), "ClientInfo", new { userId = Html.ValueFor(modelItem => item.userId).ToString() })
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    <tr style="background-color:#f9f9f9;">
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProductName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Quantity)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OrderDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DeliveryDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DeliveryMethod)
+                        </td>
+                        <td>
+                            @Html.ActionLink(Html.ValueFor(modelItem => item.UserEmail).ToString(), "ClientInfo", new { userId = item.userId, email = item.UserEmail })
+                        </td>
+                    </tr>
+                }
+                user = item.UserEmail;
+            }
+        </table>
+    }
+    else
+    {
+        <h4>Nu sunt comenzi!</h4>
+    }
+</div>
+@if (Model.Count() > 0)
+{
+    <div id="map" style="width:95%;height:500px;"></div>
+}
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7385E3sjwvf87AzDJGakWKk8iRI1SX1Y&callback=myMap"></script>
+<script type="text/javascript">
+    window.onload = googleMap();
+    function googleMap() {
+        var data = @Html.Raw(Json.Encode(ViewBag.Users));
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 7,
+            center: new google.maps.LatLng(46.77314, 23.635),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+        var infowindow = new google.maps.InfoWindow();
+        var marker, i;
+
+        for (i = 0; i < data.length; i++) {
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(data[i].Latitude, data[i].Longitude),
+                map: map
+            });
+
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                    infowindow.setContent( data[i].FirstName +" "+ data[i].LastName);
+                    infowindow.open(map, marker);
+                }
+            })(marker, i));
+        }
+    }
+</script>

@@ -1,0 +1,10 @@
+E:\Work\ManageApplications\ManageApplications\bin\Debug\ManageApplications.exe.config
+E:\Work\ManageApplications\ManageApplications\bin\Debug\ManageApplications.exe
+E:\Work\ManageApplications\ManageApplications\bin\Debug\ManageApplications.pdb
+E:\Work\ManageApplications\ManageApplications\bin\Debug\ManageApplications.xml
+E:\Work\ManageApplications\ManageApplications\obj\Debug\ManageApplications.Form1.resources
+E:\Work\ManageApplications\ManageApplications\obj\Debug\ManageApplications.Resources.resources
+E:\Work\ManageApplications\ManageApplications\obj\Debug\ManageApplications.vbproj.GenerateResource.Cache
+E:\Work\ManageApplications\ManageApplications\obj\Debug\ManageApplications.exe
+E:\Work\ManageApplications\ManageApplications\obj\Debug\ManageApplications.xml
+E:\Work\ManageApplications\ManageApplications\obj\Debug\ManageApplications.pdb

@@ -1,0 +1,97 @@
+﻿@model IEnumerable<Suporteri.Models.Group>
+
+@{
+    ViewBag.Title = "Galerii";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Galerii</h2>
+<link href="~/Style/style.css" rel="stylesheet" />
+<p>
+    @Html.ActionLink("Creeaza o noua galerie nou!", "Create")
+</p>
+@*<div class="left">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.subadminId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ActId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th></th>
+        </tr>
+    </table>
+</div>
+<div class="right">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.subadminId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ActId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th></th>
+        </tr>
+    </table>
+</div>*@
+@foreach (var item in Model)
+{
+    if (item.ID % 2 == 1)
+    {
+        <div class="left" style="background-color:#0026ff;" >
+            <div class="panel panel-default marginPanel text-center" style="height:300px">
+                <!-- Default panel contents -->
+                <div class="panel-heading">@Html.DisplayFor(modelItem => item.Name)</div>
+                <div class="panel-body" style="text-overflow: ellipsis; overflow:hidden !important;">
+                    <span style="text-overflow: ellipsis;overflow:hidden !important;">@Html.DisplayFor(modelItem => item.Description)</span>
+                </div>
+                <!-- List group -->
+                <ul class="list-group">
+                    <li class="list-group-item">@Html.DisplayFor(modelItem => item.subadminId)</li>
+                    <li class="list-group-item">@Html.DisplayFor(modelItem => item.ActId)</li>
+                    <li class="list-group-item">@Html.ActionLink("Edit", "Edit", new { id = item.ID })</li>
+                    <li class="list-group-item">@Html.ActionLink("Details", "Details", new { id = item.ID })</li>
+                    <li class="list-group-item">@Html.ActionLink("Delete", "Delete", new { id = item.ID })</li>
+                </ul>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="right" style="background-color:#0026ff; ">
+            <div class="panel panel-default marginPanel text-center" style="height:300px">
+                <!-- Default panel contents -->
+                <div class="panel-heading text-center">@Html.DisplayFor(modelItem => item.Name)</div>
+                <div class="panel-body" style="text-overflow: ellipsis;overflow:hidden !important;">
+                    <span style="text-overflow: ellipsis;overflow:hidden !important;">@Html.DisplayFor(modelItem => item.Description)</span>
+                </div>
+                <!-- List group -->
+                <ul class="list-group">
+                    <li class="list-group-item">@Html.DisplayFor(modelItem => item.subadminId)</li>
+                    <li class="list-group-item">@Html.DisplayFor(modelItem => item.ActId)</li>
+                    <li class="list-group-item">@Html.ActionLink("Edit", "Edit", new { id = item.ID })</li>
+                    <li class="list-group-item">@Html.ActionLink("Details", "Details", new { id = item.ID })</li>
+                    <li class="list-group-item">@Html.ActionLink("Delete", "Delete", new { id = item.ID })</li>
+                </ul>
+            </div>
+        </div>
+    }
+}
+
+
+
+

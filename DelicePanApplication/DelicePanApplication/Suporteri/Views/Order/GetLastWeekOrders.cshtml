@@ -1,0 +1,96 @@
+﻿@model IEnumerable<Suporteri.Models.Order>
+
+@{
+    ViewBag.Title = "GetLastWeekOrders";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br /><br />
+<h2>Comenzile din ultima saptamana</h2>
+<br />
+@*<button class="btn btn-default">
+        @Html.ActionLink("Vezi comenzile urmatoare", "GetNextOrders", "Order")
+    </button>*@
+<div class="panel panel-default marginPanel text-center">
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-striped">
+            <tr>
+                <th class="textAlignCenter">
+                    @Html.ActionLink(Html.DisplayNameFor(model => model.ProductName).ToString(), "GetAllOrders", new { orderBy = Html.DisplayNameFor(model => model.ProductName).ToString(), order = ViewBag.Order })
+                </th>
+                <th class="textAlignCenter">
+                    @Html.ActionLink(Html.DisplayNameFor(model => model.Quantity).ToString(), "GetAllOrders", new { orderBy = Html.DisplayNameFor(model => model.Quantity).ToString(), order = ViewBag.Order })
+                </th>
+                <th class="textAlignCenter">
+                    @Html.ActionLink(Html.DisplayNameFor(model => model.OrderDate).ToString(), "GetAllOrders", new { orderBy = Html.DisplayNameFor(model => model.OrderDate).ToString(), order = ViewBag.Order })
+                </th>
+                <th class="textAlignCenter">
+                    @Html.ActionLink(Html.DisplayNameFor(model => model.DeliveryDate).ToString(), "GetAllOrders", new { orderBy = Html.DisplayNameFor(model => model.DeliveryDate).ToString(), order = ViewBag.Order })
+                </th>
+                <th class="textAlignCenter">
+                    @Html.ActionLink(Html.DisplayNameFor(model => model.DeliveryMethod).ToString(), "GetAllOrders", new { orderBy = Html.DisplayNameFor(model => model.DeliveryMethod).ToString(), order = ViewBag.Order })
+                </th>
+                <th class="textAlignCenter">
+                    @Html.ActionLink(Html.DisplayNameFor(model => model.UserEmail).ToString(), "GetAllOrders", new { orderBy = Html.DisplayNameFor(model => model.UserEmail).ToString(), order = ViewBag.Order })
+                </th>
+                @*<th></th>*@
+            </tr>
+
+            @foreach (var item in Model)
+                {
+                    if (item.DeliveryDate < DateTime.Now)
+                    {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProductName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Quantity)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OrderDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DeliveryDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DeliveryMethod)
+                        </td>
+                        <td>
+                            @Html.ActionLink(Html.ValueFor(modelItem => item.UserEmail).ToString(), "ClientInfo", new { userId = Html.ValueFor(modelItem => item.userId).ToString() })
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    <tr style="background-color:#f9f9f9;">
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProductName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Quantity)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OrderDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DeliveryDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DeliveryMethod)
+                        </td>
+                        <td>
+                            @Html.ActionLink(Html.ValueFor(modelItem => item.UserEmail).ToString(), "ClientInfo", new { userId = Html.ValueFor(modelItem => item.userId).ToString() })
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    }
+    else
+    {
+        <h4>Nu sunt comenzi!</h4>
+    }
+</div>
+

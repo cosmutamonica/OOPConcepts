@@ -1,0 +1,83 @@
+﻿@model IEnumerable<Suporteri.Models.Order>
+<link href="~/Style/style.css" rel="stylesheet" />
+
+@{
+    ViewBag.Title = "GetClientOrders";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br /><br />
+<h2 class="textStyle">Comenzi</h2>
+<br />
+<div class="panel panel-default marginPanel text-center">
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-striped">
+            <tr>
+                <th class="textAlignCenter">
+                    @Html.ActionLink(Html.DisplayNameFor(model => model.ProductName).ToString(), "GetClientOrders", new { orderBy = Html.DisplayNameFor(model => model.ProductName).ToString(), order = ViewBag.Order })
+                </th>
+                <th class="textAlignCenter">
+                    @Html.ActionLink(Html.DisplayNameFor(model => model.Quantity).ToString(), "GetClientOrders", new { orderBy = Html.DisplayNameFor(model => model.Quantity).ToString(), order = ViewBag.Order })
+                </th>
+                <th class="textAlignCenter">
+                    @Html.ActionLink(Html.DisplayNameFor(model => model.OrderDate).ToString(), "GetClientOrders", new { orderBy = Html.DisplayNameFor(model => model.OrderDate).ToString(), order = ViewBag.Order })
+                </th>
+                <th class="textAlignCenter">
+                    @Html.ActionLink(Html.DisplayNameFor(model => model.DeliveryDate).ToString(), "GetClientOrders", new { orderBy = Html.DisplayNameFor(model => model.DeliveryDate).ToString(), order = ViewBag.Order })
+                </th>
+                <th class="textAlignCenter">
+                    @Html.ActionLink(Html.DisplayNameFor(model => model.DeliveryMethod).ToString(), "GetClientOrders", new { orderBy = Html.DisplayNameFor(model => model.DeliveryMethod).ToString(), order = ViewBag.Order })
+                </th>
+                @*<th></th>*@
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                if (item.DeliveryDate < DateTime.Now)
+                {
+                    <tr style="opacity:20; background-color:bisque">
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProductName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Quantity)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OrderDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DeliveryDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DeliveryMethod)
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProductName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Quantity)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OrderDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DeliveryDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DeliveryMethod)
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    }
+    else
+    {
+        <h4>Nu sunt comenzi!</h4>
+    }
+</div>

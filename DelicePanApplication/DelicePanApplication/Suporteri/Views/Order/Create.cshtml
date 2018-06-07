@@ -1,0 +1,97 @@
+﻿@model Suporteri.Models.Order
+<link href="~/Style/style.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br /><br />
+<h2>Adauga comanda</h2>
+<br />
+<input type="button" id="add" name="btnAdd" value="Confirma comanda" onclick="location.href='@Url.Action("GetPendingOrders", "Order")'" class="btn btn-default" />
+<br />
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    foreach (var prod in ViewBag.Products)
+    {
+        if (prod.ProductID % 2 == 1)
+        {
+            <div class="left">
+                <div class="form-horizontal">
+                    <div class="panel panel-default marginPanel text-center" style="width:440px">
+                        <h4 class="paragraph">@prod.ProductName</h4>
+                        <img src=@prod.ImagePath /><br />
+                        <span class="footerText">Pret: @prod.UnitPrice RON / @prod.Category</span>
+                        <div class="form-group footerText">
+                            @Html.LabelFor(model => model.Quantity, htmlAttributes: new { @class = "control-label col-md-4" })
+                            <div class="col-md-6 ">
+                                @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        @{Model.ProductId = prod.ProductID;} @* Only do this here if you did NOT do it in the controller *@
+                        @Html.HiddenFor(m => m.ProductId)@* This will make it so that Attribute = "whatever" when the page submits to the controller *@
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-8">
+                                <input type="submit" id="test" name="btnAdd" value="Adauga" class="btn btn-default" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                            }
+                            else
+                            {
+                                <div class="right">
+                                    <div class="form-horizontal">
+                                        <div class="panel panel-default marginPanel text-center" style="width:440px">
+                                            <h4 class="paragraph">@prod.ProductName</h4>
+                                            <img src=@prod.ImagePath /><br />
+                                            <span class="footerText">Pret: @prod.UnitPrice RON / @prod.Category</span>
+                                            <div class="form-group footerText">
+                                                @Html.LabelFor(model => model.Quantity, htmlAttributes: new { @class = "control-label col-md-4" })
+                                                <div class="col-md-6">
+                                                    @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                                                    @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            @{Model.ProductId = prod.ProductID;} @* Only do this here if you did NOT do it in the controller *@
+                                            @Html.HiddenFor(m => m.ProductId)@* This will make it so that Attribute = "whatever" when the page submits to the controller *@
+
+                                            <div class="form-group">
+                                                <div class="col-md-offset-2 col-md-8">
+                                                    <input type="submit" id="test" name="btnAdd" value="Adauga" class="btn btn-default" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                        }
+                                                    }
+                                                }
+<script type="text/javascript">
+    $('input[name="btnAdd"]').click(function (e) {
+        e.preventDefault();
+        var parent = $(this).parent().parent().parent();
+        var quantityValue = parent.find('input[name="Quantity"]').eq(0).val();
+        var productId = parent.find('input[name="ProductId"]').eq(0).val();
+        //var deliveryMethod = parent.find('select[name="DeliveryMethod"]').eq(0).val();
+        $.ajax({
+            type: 'POST',
+            url: '/Order/Create',
+            data: { quantity: quantityValue, ProductId: productId },
+            dataType: 'json',
+            success: function (response) {
+                if (response != null && response.success) {
+                    alert(response.responseText);
+                } else {
+                    alert(response.responseText);
+                }
+            },
+            error: function (response) {
+                alert("Eroare!Comanda nu a putut fi procesata");
+            }
+        });
+    });
+</script>

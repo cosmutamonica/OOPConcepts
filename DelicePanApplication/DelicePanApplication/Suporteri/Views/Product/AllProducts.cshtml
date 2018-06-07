@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Suporteri.Models.Product>
+<link href="~/Style/style.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "AllProducts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br /><br />
+<h2 class="textStyle">Produsele noastre</h2>
+<br />
+@if (this.User.IsInRole("Admin"))
+{
+    <p>
+        <input type="button" id="add" name="btnAdd" value="Adauga produs nou" onclick="location.href='@Url.Action("Create", "Product")'" class="btn btn-default" />
+    </p>
+}
+@foreach (var item in Model)
+{
+    if (item.ProductID % 2 == 1)
+    {
+        <div class="left">
+            <div class="panel panel-default marginPanel text-center">
+                <!-- Default panel contents -->
+                <div class="panel-heading paragraph">@Html.DisplayFor(modelItem => item.ProductName)</div>
+                <div class="panel-body" style="text-overflow: ellipsis; overflow:hidden !important;">
+                    <img src="@Html.DisplayFor(modelItem => item.ImagePath)" />
+                </div>
+                <div class="panel-footer footerText">
+                    Pret: @Html.DisplayFor(modelItem => item.UnitPrice) RON /  @Html.DisplayFor(modelItem => item.Category)
+                </div>
+                @if (this.User.IsInRole("Admin"))
+                {
+                    <ul class="list-group" style="display:inline-flex">
+                        <li class="list-group-item">@Html.ActionLink("Detalii", "Details", new { id = item.ProductID })</li>
+                        <li class="list-group-item">@Html.ActionLink("Editeaza", "Edit", new { id = item.ProductID })</li>
+                        <li class="list-group-item">@Html.ActionLink("Delete", "Delete", new { id = item.ProductID })</li>
+                    </ul>
+                }
+                else
+                {
+                    <ul class="list-group" style="display:inline-flex">
+                        <li class="list-group-item">@Html.ActionLink("Detalii", "Details", new { id = item.ProductID })</li>
+                    </ul>
+                }
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="right">
+            <div class="panel panel-default marginPanel text-center">
+                <!-- Default panel contents -->
+                <div class="panel-heading paragraph">@Html.DisplayFor(modelItem => item.ProductName)</div>
+                <div class="panel-body" style="text-overflow: ellipsis; overflow:hidden !important; ">
+                    <img src="@Html.DisplayFor(modelItem => item.ImagePath)" />
+                </div>
+                <div class="panel-footer footerText">
+                    Pret: @Html.DisplayFor(modelItem => item.UnitPrice) RON /  @Html.DisplayFor(modelItem => item.Category)
+                </div>
+                @if (this.User.IsInRole("Admin"))
+                {
+                    <ul class="list-group" style="display:inline-flex">
+                        <li class="list-group-item">@Html.ActionLink("Detalii", "Details", new { id = item.ProductID })</li>
+                        <li class="list-group-item">@Html.ActionLink("Editeaza", "Edit", new { id = item.ProductID })</li>
+                        <li class="list-group-item">@Html.ActionLink("Delete", "Delete", new { id = item.ProductID })</li>
+                    </ul>
+                }
+                else
+                {
+                    <ul class="list-group" style="display:inline-flex">
+                        <li class="list-group-item">@Html.ActionLink("Detalii", "Details", new { id = item.ProductID })</li>
+                    </ul>
+                }
+            </div>
+        </div>
+    }
+}

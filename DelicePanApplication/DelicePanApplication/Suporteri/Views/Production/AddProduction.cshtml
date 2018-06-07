@@ -1,0 +1,114 @@
+﻿@model Suporteri.Models.ProductionVModel
+
+@{
+    ViewBag.Title = "AddProduction";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Style/style.css" rel="stylesheet" />
+<br /><br />
+<h2>Productia de azi</h2>
+<br />
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    foreach (var prod in ViewBag.Products)
+    {
+        if (prod.Show != "False")
+        {
+            if (prod.ProductID % 2 == 1)
+            {
+                <div class="left">
+                    <div class="form-horizontal">
+                        <div class="panel panel-default marginPanel text-center paragraph" style="width:95%">
+                            <br />
+                            <p>@prod.ProductName</p>
+                            <img src=@prod.ImagePath />
+                            <p>Pret: @prod.UnitPrice RON / @prod.Category</p>
+                            <div class="form-group paragraph">
+                                @Html.LabelFor(model => model.Quantity, htmlAttributes: new { @class = "control-label col-md-4" })
+                                <div class="col-md-6">
+                                    @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control textBoxuantity" } })
+                                    @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            @{Model.ProductId = prod.ProductID;} @* Only do this here if you did NOT do it in the controller *@
+                            @Html.HiddenFor(m => m.ProductId)@* This will make it so that Attribute = "whatever" when the page submits to the controller *@
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-8">
+                                    <input type="submit" id="test" name="btnAdd" value="Adauga" class="btn btn-default" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                }
+                                else
+                                {
+                                    <div class="right">
+                                        <div class="form-horizontal paragraph">
+                                            <div class="panel panel-default marginPanel text-center" style="width:95%">
+                                                <br />
+                                                <p>@prod.ProductName</p>
+                                                <img src=@prod.ImagePath />
+                                                <p>Pret: @prod.UnitPrice RON / @prod.Category</p>
+                                                <div class="form-group">
+                                                    @Html.LabelFor(model => model.Quantity, htmlAttributes: new { @class = "control-label col-md-4 paragraph" })
+                                                    <div class="col-md-6">
+                                                        @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control textBoxuantity" } })
+                                                        @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                                @{Model.ProductId = prod.ProductID;} @* Only do this here if you did NOT do it in the controller *@
+                                                @Html.HiddenFor(m => m.ProductId)@* This will make it so that Attribute = "whatever" when the page submits to the controller *@
+                                                <div class="form-group">
+                                                    <div class="col-md-offset-2 col-md-8">
+                                                        <input type="submit" id="test" name="btnAdd" value="Adauga" class="btn btn-default" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                            }
+                                                        }
+                                                    }
+
+  <!-- Modal -->
+                                                    <div class="modal fade" id="myModal" role="dialog">
+                                                        <div style="padding-top: 30px; width:50%;margin-left: 20%;">
+
+                                                            <!-- Modal content-->
+                                                            <div class="modal-content" style="width: 250px;height: 150px;">
+                                                                <div class="modal-header">
+                                                                    <h4 class="modal-title" id="message">@ViewBag.Message</h4>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    }
+<script type="text/javascript">
+    $('input[name="btnAdd"]').click(function (e) {
+        e.preventDefault();
+        var parent = $(this).parent().parent().parent();
+        var quantityValue = parent.find('input[name="Quantity"]').eq(0).val();
+        var productId = parent.find('input[name="ProductId"]').eq(0).val();
+        var modalMessage = document.getElementById("message");
+        $.ajax({
+            type: 'POST',
+            url: '/Production/AddProduction',
+            data: { quantity: quantityValue, ProductId: productId },
+            dataType: 'json',
+            success: function (response) {
+                if (response != null && response.success) {
+                    modalMessage.innerText = response.responseText;
+                    $('#myModal').modal('show');
+                } else {
+                    $('#myModal').modal('show');
+                }
+            },
+            error: function (response) {
+                $('#myModal').modal('show');
+            }
+        });
+    });
+</script>

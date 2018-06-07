@@ -1,0 +1,139 @@
+﻿@model IEnumerable<Suporteri.Models.Order>
+<link href="~/Style/style.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "GetPendingOrders";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#datepicker").datepicker({ dateFormat: 'dd-mm-yy' });
+        //var date = $('#datepicker').datepicker({ dateFormat: 'dd-mm-yy' }).val();
+    });
+
+    function sendOrder(e) {
+        var deliveryDate = $('input[id="datepicker"]').eq(0).val();
+        var deliveryMethod = $('select[name="DeliveryMethod"]').eq(0).val();
+        $.ajax({
+            type: 'POST',
+            url: '/Order/SendOrder',
+            data: { deliveryDate: deliveryDate, deliveryMethod: deliveryMethod },
+            dataType: 'json',
+            success: function (response) {
+                if (response != null && response.success) {
+                    alert(response.responseText);
+                } else {
+                    alert(response.responseText);
+                }
+                location.reload();
+            }
+        });
+    };
+</script>
+@{var deliveryMethod = new List<SelectListItem>
+    {
+          new SelectListItem { Text = "Da", Value="Da" },
+          new SelectListItem { Text = "Nu", Value="Nu" }
+    };
+}
+<br /><br />
+<h2>Confirma comanda</h2>
+<br />
+@*<button class="btn btn-default">
+    @Html.ActionLink("Vezi toate comenzile", "GetAllOrders", "Order")
+</button>*@
+
+@if (Model.Count() > 0)
+{
+    <div class="panel panel-default marginPanel text-center">
+        <table class="table table-striped">
+            <tr>
+                <th class="textAlignCenter">
+                    @Html.DisplayNameFor(model => model.ProductName)
+                </th>
+                <th class="textAlignCenter">
+                    @Html.DisplayNameFor(model => model.Quantity)
+                </th>
+                <th class="textAlignCenter">
+                    @Html.DisplayNameFor(model => model.UnitPrice)
+                </th>
+                @*<th class="textAlignCenter">
+                        @Html.DisplayNameFor(model => model.DeliveryMethod)
+                    </th>*@
+                <th class="textAlignCenter">
+                    @Html.DisplayNameFor(model => model.TotalPrice)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+                {
+
+                <tr style="opacity:20; background-color:bisque">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelIttem => item.UnitPrice) RON /  @Html.DisplayFor(modelItem => item.Category)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TotalPrice) RON
+                    </td>
+
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+        <br /><br />
+        <div class="container">
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Trimite comanda</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div style="padding-top: 30px; width:50%;margin-left: 20%;">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Trimite comanda!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.First().DeliveryMethod, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-6">
+                                    @Html.DropDownListFor(model => model.First().DeliveryMethod, deliveryMethod, "-------- Alege --------", new { @class = "smalldropdownwidth" })
+                                </div>
+                            </div>
+                            <br />
+                            Data livrarii: <input type="text" id="datepicker" style="margin-left:5%">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="sendOrder" name="sendOrder" onclick="sendOrder(this)" class="btn btn-default" data-dismiss="modal">Trimite</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+}
+else
+{
+    <div class="panel panel-default marginPanel text-center">
+        <h4>Nu sunt comenzi netrimise!</h4>
+    </div>
+}
